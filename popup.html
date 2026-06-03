@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Productivity Goblin</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- TITLE -->
+
+    <h1>Productivity Goblin</h1>
+
+    <!-- GOBLIN -->
+
+    <img
+      id="goblin"
+      src="assets/disappointed.png"
+      alt="Goblin"
+    />
+
+    <!-- MOOD -->
+
+    <h2 id="mood">Goblin is watching...</h2>
+
+    <!-- ROAST -->
+
+    <p id="roast"></p>
+
+    <!-- XP / LEVEL -->
+
+    <div class="xp-box">
+
+      <h3 id="level">Level 1</h3>
+
+      <p id="title">Tiny Menace</p>
+
+      <!-- XP BAR -->
+
+      <div class="xp-bar-bg">
+        <div
+          class="xp-bar-fill"
+          id="xp-fill"
+          style="width: 0%;"
+        ></div>
+      </div>
+
+      <p id="xp">0 XP</p>
+
+    </div>
+
+    <!-- FUTURE ACHIEVEMENTS -->
+
+    <div class="achievement-box">
+
+      <p class="section-title">
+        Achievements
+      </p>
+
+      <div id="achievements">
+
+        <p class="achievement">
+          🔒 Locked
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- STATS -->
+
+    <div id="stats"></div>
+
+    <!-- RESET -->
+
+    <button id="reset">
+      Reset Data
+    </button>
+
+  </div>
+
+  <script src="popup.js"></script>
+
+</body>
+
+</html>

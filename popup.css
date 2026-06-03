@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600&family=Outfit:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap');
+body {
+  width: 300px;
+  background: #111811;
+  color: #d4e8d4;
+  font-family: 'Pixelify Sans', sans-serif;
+  padding: 18px;
+  border: 1px solid #2a402a;
+  border-radius: 10px;
+  image-rendering: pixelated;
+  box-shadow: 0 0 20px rgba(74, 122, 74, 0.15);
+}
+
+.container {
+  text-align: center;
+}
+
+/* GOBLIN */
+
+#goblin {
+  width: 130px;
+  image-rendering: pixelated;
+  margin: 8px 0 10px;
+  animation: float 2.8s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+}
+
+/* TITLE */
+
+h1 {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #e5f3e5;
+  letter-spacing: 0.02em;
+}
+
+/* MOOD */
+
+#mood {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #dcefdc;
+  font-weight: 500;
+}
+
+/* ROAST */
+
+#roast {
+  margin-top: 8px;
+  color: #8aac8a;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 42px;
+  padding: 0 8px;
+}
+
+/* XP BOX */
+
+.xp-box {
+  margin: 18px 0;
+  padding: 14px;
+  background: #0c130c;
+  border: 1px solid #2a402a;
+  border-radius: 8px;
+  box-shadow: inset 0 0 12px rgba(74, 122, 74, 0.08);
+}
+
+#level {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #d9f0d9;
+  margin: 0 0 4px;
+}
+
+#title {
+  font-size: 13px;
+  color: #7ca97c;
+  margin: 6px 0 12px;
+  letter-spacing: 0.04em;
+}
+
+#xp {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: #5d815d;
+  letter-spacing: 0.08em;
+  margin-top: 8px;
+}
+
+/* XP BAR */
+
+.xp-bar-bg {
+  height: 6px;
+  background: #1a2a1a;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.xp-bar-fill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #4a7a4a,
+    #8fc98f
+  );
+  border-radius: 999px;
+  box-shadow: 0 0 10px rgba(143, 201, 143, 0.3);
+  transition: width 0.4s ease;
+}
+
+/* STATS */
+
+#stats {
+  margin-top: 14px;
+  text-align: left;
+}
+
+.site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 2px;
+  border-bottom: 1px solid #1b291b;
+  font-size: 13px;
+  color: #95b495;
+  transition: opacity 0.2s ease;
+}
+
+.site:hover {
+  opacity: 0.75;
+}
+
+.site:last-child {
+  border-bottom: none;
+}
+
+.site .xp-amount {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: #5f815f;
+}
+
+/* BUTTON */
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 18px;
+  padding: 10px 0;
+  background: #1a2c1a;
+  color: #8aac8a;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid #2f4a2f;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #223822;
+  color: #cde7cd;
+  box-shadow: 0 0 10px rgba(138, 172, 138, 0.15);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.achievement-box {
+  margin-top: 14px;
+  padding: 12px;
+  background: #0c130c;
+  border: 1px solid #2a402a;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.section-title {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-size: 11px;
+  color: #9ec89e;
+  margin-bottom: 10px;
+}
+
+.achievement {
+  font-size: 13px;
+  color: #cde7cd;
+  margin-bottom: 6px;
+}
+
+.locked {
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.xp-bar-fill {
+  height: 100%;
+  background: #4a7a4a;
+  border-radius: 999px;
+  transition: width 0.4s ease;
+
+  /* add these two lines */
+  box-shadow: 0 0 8px rgba(100, 180, 100, 0.45);
+  background: linear-gradient(90deg, #4a7a4a, #7ab87a);
+}
+
+/* XP BAR */
+
+.xp-bar-bg {
+  height: 7px;
+  background: #1a2a1a;
+  border-radius: 999px;
+  overflow: visible;
+  position: relative;
+  margin-top: 10px;
+}
+
+.xp-bar-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    #4a7a4a,
+    #7ab87a
+  );
+
+  box-shadow:
+    0 0 8px rgba(100, 180, 100, 0.45),
+    0 0 16px rgba(100, 180, 100, 0.12);
+
+  transition:
+    width 0.6s ease,
+    box-shadow 0.3s ease;
+}
+
+/* ACHIEVEMENTS */
+
+.achievement-box {
+  margin-top: 14px;
+  padding: 12px;
+  background: #0c130c;
+  border: 1px solid #2a402a;
+  border-radius: 8px;
+  text-align: left;
+
+  box-shadow:
+    inset 0 0 10px rgba(74, 122, 74, 0.05);
+}
+
+.section-title {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 11px;
+  color: #9ec89e;
+  margin-bottom: 12px;
+
+  text-transform: uppercase;
+}
+
+.achievement {
+  font-size: 13px;
+  color: #dff5df;
+  margin-bottom: 8px;
+
+  text-shadow:
+    0 0 6px rgba(143, 201, 143, 0.08);
+}
+
+.locked {
+  opacity: 0.45;
+  font-style: italic;
+}
+
+/* TERMINAL FEEL */
+
+#stats {
+  margin-top: 16px;
+  text-align: left;
+  position: relative;
+}
+
+#stats::before {
+  content: "BROWSER LOG";
+  display: block;
+
+  font-size: 10px;
+  letter-spacing: 0.08em;
+
+  color: #5f815f;
+
+  margin-bottom: 10px;
+
+  font-family: 'DM Mono', monospace;
+}
+
+/* SUBTLE SCREEN GLOW */
+
+body::after {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(143, 201, 143, 0.03),
+      transparent 70%
+    );
+
+  opacity: 0.8;
+}
