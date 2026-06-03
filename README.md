@@ -281,3 +281,6 @@ The goal was to create something people would actually enjoy interacting with in
 Your goblin is always watching.
 
 Choose your tabs wisely.
+
+All browsing data is stored locally.
+No personal data is collected or uploaded.
